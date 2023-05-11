@@ -1,4 +1,4 @@
-package com.app.marcadorpontojavaswing;
+package com.marcador.main;
 
 public class MarcadorPontoJavaSwing {
 
