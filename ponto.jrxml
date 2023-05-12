@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ponto" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="316aec48-c908-4155-b7f6-1de2b883c649">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="POSITIVAS" class="java.lang.String"/>
+	<parameter name="NEGATIVAS" class="java.lang.String"/>
+	<parameter name="TOTAL" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="hora1" class="java.time.LocalTime"/>
+	<field name="hora2" class="java.time.LocalTime"/>
+	<field name="hora3" class="java.time.LocalTime"/>
+	<field name="hora4" class="java.time.LocalTime"/>
+	<field name="hora5" class="java.time.LocalTime"/>
+	<field name="hora6" class="java.time.LocalTime"/>
+	<field name="data" class="java.time.LocalDate"/>
+	<field name="total" class="java.lang.String"/>
+	<field name="dia" class="java.lang.String"/>
+	<field name="positivas" class="java.lang.String"/>
+	<field name="negativas" class="java.lang.String"/>
+	<group name="Group1">
+		<groupHeader>
+			<band height="20">
+				<textField>
+					<reportElement x="359" y="0" width="54" height="20" uuid="92216ad4-ba37-488d-9df6-fbd3424ab4f9"/>
+					<box topPadding="3">
+						<pen lineWidth="0.1"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sai 3"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="305" y="0" width="54" height="20" uuid="716ce0e9-50aa-4038-a18a-79531d2ac96e"/>
+					<box topPadding="3">
+						<pen lineWidth="0.1"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Ent 3"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="197" y="0" width="54" height="20" uuid="b04521df-c54d-4a60-94b3-cc053fbaace7"/>
+					<box topPadding="3">
+						<pen lineWidth="0.1"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Ent 2"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="143" y="0" width="54" height="20" uuid="1a63f856-cbf7-4085-a865-3474bbc8e14a"/>
+					<box topPadding="3">
+						<pen lineWidth="0.1"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sai 1"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="251" y="0" width="54" height="20" uuid="d37a9d64-66f7-41aa-afe6-cb2bef3b00ad"/>
+					<box topPadding="3">
+						<pen lineWidth="0.1"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sai 2"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="89" y="0" width="54" height="20" uuid="8da18079-2b05-4d66-bcf5-5c42e0f91a84"/>
+					<box topPadding="3">
+						<pen lineWidth="0.1"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Ent 1"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="34" y="0" width="55" height="20" uuid="13fb4ad4-d15e-4f0f-8cd8-10e374acc825"/>
+					<box topPadding="3">
+						<pen lineWidth="0.1"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Data"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="413" y="0" width="54" height="20" uuid="0020f6e0-3155-423b-820f-ac1e6aafa4ed"/>
+					<box topPadding="3">
+						<pen lineWidth="0.1"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Total"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="467" y="0" width="44" height="20" uuid="d994711f-6c5a-4cce-91ff-b88130fe15aa"/>
+					<box topPadding="3">
+						<pen lineWidth="0.1"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["+"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="511" y="0" width="44" height="20" uuid="fe920325-a280-4355-8279-9b02964d7e1d"/>
+					<box topPadding="3">
+						<pen lineWidth="0.1"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["-"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="0" width="34" height="20" uuid="e8292c28-8416-468d-bfa8-12cf213868ae"/>
+					<box topPadding="3">
+						<pen lineWidth="0.1"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Dia"]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="20" splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="359" y="0" width="54" height="19" uuid="2e4d7363-07c6-4d5b-9bee-48c9cef73c37"/>
+				<box topPadding="3" leftPadding="0">
+					<pen lineWidth="0.1"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{hora6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="305" y="0" width="54" height="19" uuid="f7ca5f3e-b664-428d-a689-05e3685e56cf"/>
+				<box topPadding="3" leftPadding="0">
+					<pen lineWidth="0.1"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{hora5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="251" y="0" width="54" height="19" uuid="e94450c3-4854-45d6-890a-6c5c5ee4d6cd"/>
+				<box topPadding="3" leftPadding="0">
+					<pen lineWidth="0.1"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{hora4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="197" y="0" width="54" height="19" uuid="7e4cebb6-ff5a-437f-b589-35b38d6dc22a"/>
+				<box topPadding="3" leftPadding="0">
+					<pen lineWidth="0.1"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{hora3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="143" y="0" width="54" height="19" uuid="e3771245-1e63-43d7-b035-0a41610bc9f4"/>
+				<box topPadding="3" leftPadding="0">
+					<pen lineWidth="0.1"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{hora2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="89" y="0" width="54" height="19" uuid="131a5e10-a473-46c1-8851-c8f1c3ddf4ae"/>
+				<box topPadding="3" leftPadding="0">
+					<pen lineWidth="0.1"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{hora1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="34" y="0" width="55" height="19" uuid="5be08328-494d-4a11-804e-d462c36bd8a8"/>
+				<box topPadding="3" leftPadding="2">
+					<pen lineWidth="0.1"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{data}.format(java.time.format.DateTimeFormatter.ofPattern("dd/MM/yyyy"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="413" y="0" width="54" height="19" uuid="74e27df1-32ff-4f2b-a018-e11e4fd7d9af"/>
+				<box topPadding="3" leftPadding="0">
+					<pen lineWidth="0.1"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="467" y="0" width="44" height="19" uuid="a749dbf6-b68d-4899-902b-cd132aed0b38"/>
+				<box topPadding="3">
+					<pen lineWidth="0.1"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{positivas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="511" y="0" width="44" height="19" uuid="89353c81-6453-4b73-b08b-6d91ee26dec2"/>
+				<box topPadding="3">
+					<pen lineWidth="0.1"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{negativas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="34" height="19" uuid="9dde46f3-c500-454a-8d21-6c6ad95d02c2"/>
+				<box topPadding="3">
+					<pen lineWidth="0.1"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dia}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="70">
+			<textField>
+				<reportElement x="455" y="10" width="100" height="20" uuid="bba175c8-c5dc-458f-ab20-d34cc761c3c8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{POSITIVAS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="30" width="100" height="20" uuid="bfde7221-ae44-4e0b-bc22-bc735f51d19a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{NEGATIVAS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="50" width="100" height="20" uuid="5a23effe-08fe-45aa-9b79-6d285906a3bc"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{TOTAL}.replace(" ","").startsWith("--")?$P{TOTAL}.substring(2):$P{TOTAL}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="355" y="10" width="100" height="20" uuid="a2426bff-1255-4a88-928f-983ed6416991"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Horas Positivas:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="355" y="30" width="100" height="20" uuid="918ae42a-58d3-4bed-a9c2-fd58b877b553"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Horas Negativas:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="355" y="50" width="100" height="20" uuid="74b1df61-4fca-4f4c-a08f-8160b0289b62"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Total de Horas:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
